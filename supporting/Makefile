@@ -15,5 +15,5 @@ seqmm: seqmm.c
 	$(CC) $(CFLAGS) -o $@ seqmm.c
 
 clean:
-	$(RM) cannon genmat prtmat seqmm
+	$(RM) genmat prtmat seqmm
 	$(RM) *.o core *~
