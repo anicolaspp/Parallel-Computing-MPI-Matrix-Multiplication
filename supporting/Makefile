@@ -3,10 +3,7 @@ MPICC = mpicc
 
 .PHONY:	all clean
 
-all: cannon genmat prtmat seqmm
-
-cannon:	cannon.c
-	$(MPICC) $(CFLAGS) -o $@ $< -lm
+all: genmat prtmat seqmm
 
 genmat: genmat.c
 	$(CC) $(CFLAGS) -o $@ genmat.c
